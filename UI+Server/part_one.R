@@ -7,11 +7,8 @@ ui <- fluidPage(
   titlePanel("Hello World!"),
   
   sidebarLayout(
-    
     sidebarPanel(
-      
       h3("User Input"),
-      
       sliderInput(
         inputId = "myfirst_slider",
         label = "Number of points",
@@ -19,7 +16,6 @@ ui <- fluidPage(
         max = 100,
         value = 50
       ),
-      
       numericInput(
         inputId = "myfirst_mean",
         label = "Mean",
@@ -27,7 +23,6 @@ ui <- fluidPage(
         max = 10,
         value = 70
       ),
-      
       numericInput(
         inputId = "myfirst_sd",
         label = "STD",
@@ -35,8 +30,6 @@ ui <- fluidPage(
         max = 100,
         value = 50
       ),
-      
-      
     ),
     mainPanel(
       
